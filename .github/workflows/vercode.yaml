@@ -23,7 +23,7 @@ jobs:
 
       - name: Download Veracode Container Scanner CLI
         run: |
-          curl -fsSL https://tools.veracode.com/container-security/veracode -o veracode
+          curl -sSfL https://github.com/veracode/container_iac_scanning_cli/releases/latest/download/veracode -o veracode
           chmod +x veracode
           sudo mv veracode /usr/local/bin
 
